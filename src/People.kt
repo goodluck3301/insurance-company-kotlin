@@ -1,0 +1,1 @@
+open class People(private val firstName:String, private val lastName:String, private val age:Int, private val profileNumber:String)

@@ -1,0 +1,1 @@
+data class ContactInformation (val insuranceName:String,val address:String, val phoneNumber:Int, val mail:String)
