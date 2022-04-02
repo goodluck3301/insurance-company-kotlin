@@ -5,11 +5,9 @@ class InsuranceCompany(val contact:ContactInformation, private val worker:Mutabl
     var worker_count = worker.size
     var customers_count = customers.size
 
-    fun getPublicInfo():String
-    {
+    fun getPublicInfo():String {
         return "${YELLOW}${contact.insuranceName}${RESET}\n Adress-${contact.address}, Phone-(+${contact.phoneNumber}), Mail-${contact.mail}\nWorker Count-(${worker_count}), Customers Count-(${customers_count})"
     }
-
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------
     private val database = Database()
@@ -73,8 +71,6 @@ class InsuranceCompany(val contact:ContactInformation, private val worker:Mutabl
                         val input_this_year = Scanner(System.`in`).nextInt()
                         println("Input This day")
                         val input_this_day = Scanner(System.`in`).nextInt()
-
-
 
                         list.add(Customers(list.size,
                             input_fName,
