@@ -1,7 +1,6 @@
 import java.util.*
 import java.time.LocalDate
 import java.time.Month
-//val date = LocalDate.of(2016, Month.APRIL, 15)
 
 class Customers(
 
