@@ -1,11 +1,11 @@
 
 class Worker(
-   private val firstName:String,       //anun
-   private val lastName:String,        //azganun
-   private val age:Int,                //tariq
-   private val phone_number:Long,      //heraxosi hamar
-   private val profileNumber:String,   //andznagri hamar
-   val worker_thick:String             //hastiq
+   private val firstName:String,       // name
+   private val lastName:String,        // surname
+   private val age:Int,                // age
+   private val phone_number:Long,      // phone number
+   private val profileNumber:String,   // profileNumber
+   val worker_thick:String             // worker thick
 //
 ):People(firstName, lastName, age, profileNumber)
 {
