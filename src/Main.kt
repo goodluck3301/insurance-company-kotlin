@@ -33,8 +33,7 @@ fun pint_() {
         "${PURPLE}-${RED}.${PURPLE}-${RED}.${PURPLE}-${RED}.${PURPLE}-${RED}.${PURPLE}-${RED}.${PURPLE}-${RESET}\n")
     }
 
-fun main()
-{
+fun main() {
     val worker_list = mutableListOf(Worker("Ani","Asatryan",25,374986534,"AA00215454","Director"),
             Worker("Armen","Vardanyan",31,374748965,"AA98456513","Insurancer"),
             Worker("Anahit","Manukyan",21,374659874,"AA99885544","Insurancer"),
@@ -114,8 +113,6 @@ fun main()
                                      println(cust_list[c - 1].getInfoCustomers())
                                      if(insuranceCompany.payMoney())
                                          bool1 = true
-
-
                                  }
                                  2 -> {
                                      println("Total money ${cust_list[c - 1].historyMoney()}$")
@@ -147,7 +144,7 @@ fun main()
                                                 "${RED}[1]${RESET}Get Customers Info\n" +
                                                 "${RED}[2]${RESET}Add Customer\n" +
                                                 "${RED}[3]${RESET}Delete Customer\n" +
-                                                "${RED}[4]${RESET}All Income\n" +             ///ekamutnery
+                                                "${RED}[4]${RESET}All Income\n" +             
                                                 "${RED}[5]${RESET}Add Worker\n" +
                                                 "${RED}[6]${RESET}Delete Worker\n" +
                                                 "${RED}[7]${RESET}Get Worker Info\n" +
@@ -157,7 +154,7 @@ fun main()
                                                 "${RED}[1]${RESET}Get Customers Info\n" +
                                                 "${RED}[2]${RESET}Add Customer\n" +
                                                 "${RED}[3]${RESET}Delete Customer\n" +
-                                                "${RED}[4]${RESET}All Income\n" +             ///ekamutnery
+                                                "${RED}[4]${RESET}All Income\n" +             
                                                 "${RED}[0]${RESET}Log out\n")
                                     //--------------------------------------------------------------
                                     var input_Worker_Option:Int
