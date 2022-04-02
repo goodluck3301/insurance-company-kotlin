@@ -3,15 +3,13 @@ import kotlin.math.log
 
 class Database() {
 
-
     private val adm_log = "adm"
     private val adm_pass = "adm"
 
     private var login_pass_cust = mutableMapOf(1 to "cust1", 2 to "cust2", 3 to "cust3", )
     private var login_pass_work = mutableMapOf(11 to "work1", 12 to "work2", 13 to "work3",)
 
-
-
+    
     fun check_login_pass(login:String, password:String, ):Int
     {
         if(login == adm_log && password==adm_pass)
@@ -26,24 +24,19 @@ class Database() {
         }
 
         login_pass_cust.forEach{
-            when
-            {
+            when {
                 l == it.key && password==it.value  -> return it.key
-
             }
-        }//forEach
+        }
 
         login_pass_work.forEach{
-            when
-            {
+            when {
                 l == it.key && password == it.value  -> return it.key
             }
-        }//forEach
+        }
 
         return 0
     }//fun  check_login_pass
-
-
 
     fun addLoginPass(id:Int)
     {
