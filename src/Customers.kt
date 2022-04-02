@@ -5,14 +5,14 @@ import java.time.Month
 
 class Customers(
 
-    private val cost_id:Int,                            //hachaxordi id
-    private val firstName:String,                       //anun
-    private val lastName:String,                        //azganun
-    private val age:Int,                                //tariq
-    private val profileNumber:String,                   //andznagri hamar
-    private val cust_phone_number:Long,                 //heraxosi hamar
-    private val type_of_insurance:CategoryInsurance,    //apahovagrutyan tesaky
-    private var datee:Short,                            //apahovagrman jamkety
+    private val cost_id:Int,                            // id
+    private val firstName:String,                       // name 
+    private val lastName:String,                        // surname
+    private val age:Int,                                // age
+    private val profileNumber:String,                   // 
+    private val cust_phone_number:Long,                 // phone number
+    private val type_of_insurance:CategoryInsurance,    // insurance type
+    private var datee:Short,                            // insurance date
     var time:Date,
 
 ):People( firstName, lastName, age, profileNumber,){
@@ -58,7 +58,7 @@ class Customers(
 
     var monthTime:Short = 0
 
-    fun extend_the_deadline()//erkaradzgel jamkety
+    fun extend_the_deadline()// 
     {
             println("How many months do you want to extend the deadline? [1 month - 5$]")
             val input_month: Short
@@ -103,20 +103,12 @@ class Customers(
 
     }
 
-    fun print_term():String
-    {
-       // val deadline_insurance = Date(time.year,time.month,time.date)
-        //deadline_insurance.month = deadline_insurance.month + date.toInt()
-
+    fun print_term():String {
+        
         return " ${YELLOW}time${RESET} (${monthTime}${RESET})"
     }
 
     fun historyMoney():Int = (date * 5)
     fun incident_Money():Int = (date*15)
 
-
-
-
 }//class Customers
-
-
